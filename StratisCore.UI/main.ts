@@ -18,13 +18,13 @@ nodaemon = args.some(val => val === "--nodaemon" || val === "-nodaemon");
 
 let apiPort;
 if (testnet && !sidechain) {
-  apiPort = 62009;
+  apiPort = 52541;
 } else if (!testnet && !sidechain) {
-  apiPort = 62000;
+  apiPort = 52540;
 } else if (sidechain && testnet) {
-  apiPort = 38225;
+  apiPort = 52543;
 } else if (sidechain && !testnet) {
-  apiPort = 38225;
+  apiPort = 52543;
 }
 
 ipcMain.on('get-port', (event, arg) => {
@@ -55,14 +55,14 @@ function createWindow() {
     frame: true,
     minWidth: 1150,
     minHeight: 650,
-    title: "Solaris Core",
+    title: "Bulwark Core",
     webPreferences: {
       webSecurity: false
     },
     icon: path.join(__dirname, "dist/assets/images/icon.ico")
   });
 
-  
+
   if (serve) {
     require('electron-reload')(__dirname, {
     });
@@ -107,7 +107,7 @@ app.on('ready', () => {
     if (sidechain && !nodaemon) {
       startDaemon("Stratis.SidechainD");
     } else if (!nodaemon) {
-      startDaemon("Stratis.SolarisD")
+      startDaemon("Stratis.BulwarkD")
     }
   }
   createTray();
@@ -185,7 +185,7 @@ function startDaemon(daemonName) {
   });
 
   daemonProcess.stdout.on('data', (data) => {
-    writeLog(`Solaris: ${data}`);
+    writeLog(`Bulwark: ${data}`);
   });
 }
 
@@ -213,7 +213,7 @@ function createTray() {
       }
     }
   ]);
-  systemTray.setToolTip('Solaris Core');
+  systemTray.setToolTip('Bulwark Core');
   systemTray.setContextMenu(contextMenu);
   systemTray.on('click', function() {
     if (!mainWindow.isVisible()) {

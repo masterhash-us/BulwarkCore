@@ -1,18 +1,18 @@
 {
-  "name": "solaris-core",
-  "description": "Solaris Core Wallet",
+  "name": "Bulwark-core",
+  "description": "Bulwark Core Wallet",
   "version": "3.0.0",
   "author": {
-    "name": "Solaris Platform",
-    "email": "support@solarisplatform.com"
+    "name": "Bulwark Platform",
+    "email": "support@Bulwarkcrypto.com"
   },
   "license": "MIT",
-  "homepage": "https://github.com/SolarisPlatform/SolarisCore",
+  "homepage": "https://github.com/BulwarkPlatform/BulwarkCore",
   "keywords": [
     "fullnode",
     "ui",
-    "solaris",
-	"solarisplatform",
+    "Bulwark",
+	"Bulwarkplatform",
     "core",
     "bitcoin",
     "angular",

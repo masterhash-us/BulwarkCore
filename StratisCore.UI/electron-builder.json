@@ -1,6 +1,6 @@
 {
-  "appId": "com.solarisplatform.core",
-  "productName": "Solaris Core",
+  "appId": "com.Bulwarkplatform.core",
+  "productName": "Bulwark Core",
   "publish": null,
   "directories": {
     "output": "app-builds"
@@ -26,7 +26,7 @@
       "nsis"
     ],
     "signingHashAlgorithms": [ "sha256" ],
-    "certificateSubjectName": "CN=CryptSoft B.V., O=CryptSoft B.V., STREET=Siriusdreef 17-27, L=Hoofddorp, S=North-Holland, PostalCode=2132 WT, C=NL",
+    "certificateSubjectName": "CN=Masterhash, O=Masterhash, STREET=McCubbin Court 25-31, L=New Beith, S=Queensland, PostalCode=4124, C=AU",
     "artifactName": "${productName}-v${version}-setup-${os}-${arch}.${ext}"
   },
   "linux": {
@@ -35,7 +35,7 @@
       "deb",
       "tar.gz"
     ],
-    "synopsis": "StratisCore.UI: Solaris' staking wallet.",
+    "synopsis": "StratisCore.UI: Bulwark' staking wallet.",
     "category": "Utility",
     "artifactName": "${productName}-v${version}-${os}-${arch}.${ext}"
   },

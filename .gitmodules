@@ -1,7 +1,7 @@
 [submodule "FederatedSidechains"]
 	path = FederatedSidechains
-	url = https://github.com/SolarisPlatform/FederatedSidechains
-	
-[submodule "SolarisBitcoinFullNode"]
-	path = SolarisBitcoinFullNode
-	url = https://github.com/SolarisPlatform/SolarisBitcoinFullNode
+	url = https://github.com/masterhash-us/FederatedSidechains
+
+[submodule "BulwarkBitcoinFullNode"]
+	path = BulwarkBitcoinFullNode
+	url = https://github.com/masterhash-us/BulwarkBitcoinFullNode
